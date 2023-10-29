@@ -5,16 +5,39 @@
     text-align: center;
 }
 
+.header_images {
+    position: relative;
+}
+
 .bridge {
     width: 100%;
+    padding-bottom: 3%;
+}
+
+.AK {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 0;
+    right: 0;
+    padding-top: 6vw;
+    padding-right: 14vw;
+}
+
+.bridge_text_medium {
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    font-size: 1.5vw;
+    word-spacing: 0.001vw;
+    display: inline;
 }
 
 .bridge_text {
     font-family: "Montserrat-SemiBold";
     color: white;
     font-size: 1.5vw;
-    padding-top: 2%;
-    word-spacing: 1vw;
+    word-spacing: 2vw;
+    display: inline;
 }
 
 
