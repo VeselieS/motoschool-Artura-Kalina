@@ -1,0 +1,27 @@
+.header {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.bridge {
+    width: 100%;
+}
+
+.bridge_text {
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    font-size: 1.5vw;
+    padding-top: 2%;
+    word-spacing: 1vw;
+}
+
+
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url(./src/fonts/Montserrat-SemiBold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
