@@ -1,8 +1,103 @@
-.header {
+body {
+    margin: 0;
+}
+
+.container {
     background-color: black;
-    width: 100%;
-    height: auto;
     text-align: center;
+}
+
+/* less */
+@media (max-width: 320px) {
+    .bridge_text{
+        font-size: 0.7em;
+    }
+
+    .bridge_text_medium{
+        font-size: 0.7em;
+    }
+}
+
+/* phones */
+@media (min-width: 320px) {
+    .bridge_text{
+        font-size: 0.9em;
+    }
+
+    .bridge_text_medium{
+        font-size: 0.9em;
+    }
+}
+
+/* phones */
+@media (min-width: 480px) {
+    .bridge_text{
+        font-size: 1.1em;
+    }
+
+    .bridge_text_medium{
+        font-size: 1.1em;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    .bridge_text{
+        font-size: 1.2em;
+    }
+
+    .bridge_text_medium{
+        font-size: 1.2em;
+    }
+}
+
+/* netbooks */
+@media (min-width: 1024px) {
+    .bridge_text{
+        display: inline;
+        font-size: 0.95em;
+    }
+
+    .bridge_text_medium{
+        display: inline;
+        font-size: 0.95em;
+    }
+
+    .bridge {
+        padding-bottom: 3%;
+    }
+}
+
+/* not full-hd */
+@media (min-width: 1280px) {
+    .bridge_text{
+        font-size: 1.1em;
+    }
+
+    .bridge_text_medium{
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1600px) {
+    .bridge_text{
+        font-size: 1.4em;
+    }
+
+    .bridge_text_medium{
+        font-size: 1.4em;
+    }
+}
+
+/* full-hd */
+@media (min-width: 1920px) {
+    .bridge_text{
+        font-size: 1.7em;
+    }
+
+    .bridge_text_medium{
+        font-size: 1.7em;
+    }
 }
 
 .header_images {
@@ -11,7 +106,7 @@
 
 .bridge {
     width: 100%;
-    padding-bottom: 3%;
+    /* padding-bottom: 3%; */
 }
 
 .AK {
@@ -27,19 +122,14 @@
 .bridge_text_medium {
     font-family: "Montserrat-SemiBold";
     color: white;
-    font-size: 1.5vw;
     word-spacing: 0.001vw;
-    display: inline;
 }
 
 .bridge_text {
     font-family: "Montserrat-SemiBold";
     color: white;
-    font-size: 1.5vw;
     word-spacing: 2vw;
-    display: inline;
 }
-
 
 
 @font-face {
