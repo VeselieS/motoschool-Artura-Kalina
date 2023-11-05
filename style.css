@@ -5,6 +5,38 @@ body {
 .container {
     background-color: black;
     text-align: center;
+    padding-bottom: 3%;
+}
+
+.header_images {
+    position: relative;
+}
+
+.bridge {
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+.AK {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 0;
+    right: 0;
+    padding-top: 6vw;
+    padding-right: 14vw;
+}
+
+.bridge_text_medium {
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    word-spacing: 0.001vw;
+}
+
+.bridge_text {
+    font-family: "Montserrat-SemiBold";
+    color: white;
+    word-spacing: 2vw;
 }
 
 /* less */
@@ -62,10 +94,6 @@ body {
         display: inline;
         font-size: 0.95em;
     }
-
-    .bridge {
-        padding-bottom: 3%;
-    }
 }
 
 /* not full-hd */
@@ -98,37 +126,6 @@ body {
     .bridge_text_medium{
         font-size: 1.7em;
     }
-}
-
-.header_images {
-    position: relative;
-}
-
-.bridge {
-    width: 100%;
-    /* padding-bottom: 3%; */
-}
-
-.AK {
-    position: absolute;
-    width: 20%;
-    height: 20%;
-    top: 0;
-    right: 0;
-    padding-top: 6vw;
-    padding-right: 14vw;
-}
-
-.bridge_text_medium {
-    font-family: "Montserrat-SemiBold";
-    color: white;
-    word-spacing: 0.001vw;
-}
-
-.bridge_text {
-    font-family: "Montserrat-SemiBold";
-    color: white;
-    word-spacing: 2vw;
 }
 
 
