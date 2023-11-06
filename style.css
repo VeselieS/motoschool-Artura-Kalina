@@ -119,6 +119,10 @@ body {
 
 /* full-hd */
 @media (min-width: 1920px) {
+    /* .container{
+        height: 1080px;
+    } */
+
     .bridge_text{
         font-size: 1.7em;
     }
