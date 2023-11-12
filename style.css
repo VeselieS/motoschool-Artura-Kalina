@@ -2,6 +2,7 @@ body {
     margin: 0;
 }
 
+/* container_0 - bridge */
 .container {
     background-color: black;
     text-align: center;
@@ -28,15 +29,53 @@ body {
 }
 
 .bridge_text_medium {
-    font-family: "Montserrat-SemiBold";
+    font-family: "Montserrat-SemiBold.ttf";
     color: white;
     word-spacing: 0.001vw;
 }
 
 .bridge_text {
-    font-family: "Montserrat-SemiBold";
+    font-family: "Montserrat-SemiBold.ttf";
     color: white;
     word-spacing: 2vw;
+}
+
+
+/* container_1 - news */
+.container_1 {
+    background-color: white;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3%;
+}
+
+.container_1_images {
+    margin: auto;
+}
+
+.news_head {
+    font-family: "Montserrat-Bold.ttf";
+    color: black;
+    text-align: left;
+}
+
+.news_text {
+    font-family: "Montserrat-SemiBolt.ttf";
+    color: black;
+    text-align: left;
+}
+
+.news_more {
+    font-family: "Montserrat-SemiBolt.ttf";
+    color: black;
+    float: left;
+}
+
+.news_all {
+    font-family: "Montserrat-SemiBolt.ttf";
+    color: black;
+    float: right;
 }
 
 /* less */
@@ -48,9 +87,22 @@ body {
     .bridge_text_medium{
         font-size: 0.7em;
     }
+
+    .container_1_images {
+        width: 192px;
+    }
+
+    .news_head{
+        font-size: 0.4em;
+    }
+
+    .news_text, .news_more, .news_all {
+        font-size: 0.3em;
+    }
 }
 
 /* phones */
+/* height 240px */
 @media (min-width: 320px) {
     .bridge_text{
         font-size: 0.9em;
@@ -59,9 +111,23 @@ body {
     .bridge_text_medium{
         font-size: 0.9em;
     }
+
+    .container_1_images {
+        width: 192px;
+    }
+
+    .news_head{
+        font-size: 0.4em;
+    }
+
+    .news_text, .news_more, .news_all {
+        font-size: 0.3em;
+    }
+
 }
 
 /* phones */
+/* height 320px */
 @media (min-width: 480px) {
     .bridge_text{
         font-size: 1.1em;
@@ -70,9 +136,22 @@ body {
     .bridge_text_medium{
         font-size: 1.1em;
     }
+
+    .container_1_images {
+        width: 288px;
+    }
+
+    .news_head{
+        font-size: 0.6em;
+    }
+
+    .news_text, .news_more, .news_all {
+        font-size: 0.5em;
+    }
 }
 
 /* tablet */
+/* height 576px */
 @media (min-width: 768px) {
     .bridge_text{
         font-size: 1.2em;
@@ -81,9 +160,22 @@ body {
     .bridge_text_medium{
         font-size: 1.2em;
     }
+
+    .container_1_images {
+        width: 460px;
+    }
+
+    .news_head{
+        font-size: 0.95em;
+    }
+
+    .news_text, .news_more, .news_all {
+        font-size: 0.8em;
+    }
 }
 
 /* netbooks */
+/* height 768px */
 @media (min-width: 1024px) {
     .bridge_text{
         display: inline;
@@ -94,9 +186,22 @@ body {
         display: inline;
         font-size: 0.95em;
     }
+
+    .container_1_images {
+        width: 614px;
+    }
+
+    .news_head{
+        font-size: 1.3em;
+    }
+
+    .news_text, .news_more, .news_all {
+        font-size: 1.2em;
+    }
 }
 
 /* not full-hd */
+/* height 720px */
 @media (min-width: 1280px) {
     .bridge_text{
         font-size: 1.1em;
@@ -105,8 +210,21 @@ body {
     .bridge_text_medium{
         font-size: 1.1em;
     }
+
+    .container_1_images {
+        width: 768px;
+    }
+
+    .news_head{
+        font-size: 1.6em;
+    }
+
+    .news_text, .news_more, .news_all {
+        font-size: 1.4em;
+    }
 }
 
+/* height 900px */
 @media (min-width: 1600px) {
     .bridge_text{
         font-size: 1.4em;
@@ -115,9 +233,22 @@ body {
     .bridge_text_medium{
         font-size: 1.4em;
     }
+
+    .container_1_images {
+        width: 960px;
+    }
+
+    .news_head {
+        font-size: 2.1em;
+    }
+
+    .news_text, .news_more, .news_all {
+        font-size: 1.7em;
+    }
 }
 
 /* full-hd */
+/* height 1080px */
 @media (min-width: 1920px) {
     /* .container{
         height: 1080px;
@@ -130,12 +261,29 @@ body {
     .bridge_text_medium{
         font-size: 1.7em;
     }
+
+    .container_1_images {
+        width: 1162px;
+    }
+
+    .news_head {
+        font-size: 2.5em;
+    }
+
+    .news_text, .news_more, .news_all  {
+        font-size: 2em;
+    }
 }
 
 
 @font-face {
-    font-family: "Montserrat-SemiBold";
+    font-family: "Montserrat-SemiBold.ttf";
     src: url(./src/fonts/Montserrat-SemiBold.ttf) format("truetype");
     font-style: normal;
-    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold.ttf";
+    src: url(./src/fonts/Montserrat-Bold.ttf) format("truetype");
+    font-style: normal;
 }
