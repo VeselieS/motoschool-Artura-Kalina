@@ -54,6 +54,11 @@ body {
     margin: auto;
 }
 
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
 .news_head {
     font-family: "Montserrat-Bold.ttf";
     color: black;
