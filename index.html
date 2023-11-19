@@ -3,9 +3,9 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content=" initial-scale=1, user-scalable=no, width=device-width">
+        <meta name="viewport" content="initial-scale=1, user-scalable=no, width=device-width">
         <title>Мотошкола Артура Калина</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./src/styles/style.css">
 
 <!-- Заголовок, описание и ссылка, отображаемые на карточке, если сайт кто-то зарепостит -->
         <!-- <meta property="og:title" content="Мотошкола Артура Калина"> -->
@@ -23,12 +23,27 @@
             <h3 class="bridge_text">ПРОФЕССИОНАЛИЗМ </h3><h3 class="bridge_text_medium">ИНДИВИДУАЛЬНЫЙ ПОДХОД</h3><h3 class="bridge_text"> РЕЗУЛЬТАТИВНОСТЬ</h3>
         </div>
         <div class="container_1">
-            <div class="container_1_images">
-                <img src="./src/images/news_image_1_1162x663.jpg" alt="news_0" class="responsive"/>
-                <h3 class="news_head">Мотошкола завоевывает трофей на соревнованиях по Мотоджипхане</h3>
-                <p class="news_text">Ученики продемонстрировали впечатляющие навыки на соревнованиях.</p>
-                <a class="news_more" href="">Подробнее...</a><a class="news_all" href="">Все новости</a>
+            <div class="slider">
+                <div class="slide">
+                    <img  class="responsive" src="./src/images/news_image_1_1162x663.jpg" alt="news_0"/>
+                    <h3 class="news_head">Мотошкола завоевывает трофей на соревнованиях по Мотоджипхане</h3>
+                    <p class="news_text">Ученики продемонстрировали впечатляющие навыки на соревнованиях.</p>
+                    <a class="news_more" href="">Подробнее...</a> <a class="news_all" href="./all_news.html">Все новости</a>
+                </div>
+                <div class="slide">
+                    <img  class="responsive" src="./src/images/news_image_2_1162x629.jpg" alt="news_1"/>
+                    <h3 class="news_head">Супер нано гипер соревнования меж галактичесике</h3>
+                    <p class="news_text">Вотета приемера все того что ты так ждал ис нетерпением</p>
+                    <a class="news_more" href="">Подробнее...</a> <a class="news_all" href="./all_news.html">Все новости</a>
+                </div>
+                <div class="slide">
+                    <img  class="responsive" src="./src/images/news_image_3_1162x629.jpg" alt="news_0"/>
+                    <h3 class="news_head">АКЦИЯ</h3>
+                    <p class="news_text">Скида 5000 р с 18.17.2033 по 20.13.2036</p>
+                    <a class="news_more" href="">Подробнее...</a> <a class="news_all" href="./all_news.html">Все новости</a>
+                </div>
             </div>
         </div>
+        <script src="/src/scripts/slideChanger.js"></script>
     </body>
 </html>
