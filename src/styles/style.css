@@ -6,17 +6,17 @@ body {
 .container {
     background-color: black;
     text-align: center;
-    padding-bottom: 3%;
     /* height: 100vh; */
+    padding-bottom: 3%;
 }
 
 .header_images {
     position: relative;
+    padding-bottom: 5%;
 }
 
 .bridge {
     width: 100%;
-    padding-bottom: 3%;
 }
 
 .AK {
@@ -37,12 +37,12 @@ body {
     transition: transform 0.001s ease-in-out;
   }
 
-  .logo_mean {
-    position: fixed;
-    width: 2.5%;
-    top: 3.75vw;
-    left: 4.6vw;
-  }
+.logo_mean {
+  position: fixed;
+  width: 2.5%;
+  top: 3.75vw;
+  left: 4.6vw;
+}
 
 .bridge_text_medium {
     font-family: "Montserrat-SemiBold.ttf";
@@ -63,14 +63,14 @@ body {
     padding-top: 10%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 3%;
-    /* height: 100vh; */
+    /* padding-bottom: 10%; */
+    height: 45vw;
 }
 
 .slider {
     position: relative;
     margin: auto;
-    height: auto;
+    /* height: auto; */
 }
 
 .slide {
