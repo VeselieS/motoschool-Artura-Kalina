@@ -29,6 +29,21 @@ body {
     padding-right: 14vw;
 }
 
+.logo {
+    position: fixed;
+    width: 6%;
+    top: 2vw;
+    left: 3vw;
+    transition: transform 0.001s ease-in-out;
+  }
+
+  .logo_mean {
+    position: fixed;
+    width: 2.5%;
+    top: 3.75vw;
+    left: 4.6vw;
+  }
+
 .bridge_text_medium {
     font-family: "Montserrat-SemiBold.ttf";
     color: white;
