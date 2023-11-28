@@ -11,6 +11,5 @@ window.addEventListener('scroll', function() {
   const scrollPercentage = (scrolled / contentHeight) * 100;
 
   // Применяем вращение логотипа в зависимости от процента прокрутки
-//   logo.style.transform = rotate(${scrollPercentage * 3.6}deg);
   logo.style.transform = "rotate(" + (scrollPercentage * 3.6) + "deg)";
 });

@@ -35,13 +35,17 @@ body {
     top: 2vw;
     left: 3vw;
     transition: transform 0.001s ease-in-out;
+    mix-blend-mode: difference;
+    z-index: 9999;
   }
 
 .logo_mean {
-  position: fixed;
-  width: 2.5%;
-  top: 3.75vw;
-  left: 4.6vw;
+    position: fixed;
+    width: 2.5%;
+    top: 3.75vw;
+    left: 4.6vw;
+    mix-blend-mode: difference;
+    z-index: 9999;
 }
 
 .bridge_text_medium {
@@ -60,17 +64,13 @@ body {
 /* container_1 - news */
 .container_1 {
     background-color: white;
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    /* padding-bottom: 10%; */
+    padding: 10% 10% 10% 10%;
     height: 45vw;
 }
 
 .slider {
     position: relative;
     margin: auto;
-    /* height: auto; */
 }
 
 .slide {
@@ -112,6 +112,185 @@ body {
     float: right;
 }
 
+
+/* container_2 - start */
+.container_2 {
+    background-color: white;
+    padding: 10% 10% 10% 10%;
+    height: auto;
+}
+
+.container_2_block {
+    position: relative;
+    margin: auto;
+}
+
+.container_2_header {
+    font-family: "Montserrat-Bold.ttf";
+    color: black;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.container_2_text {
+    font-family: "Montserrat-SemiBold.ttf";
+    color: black;
+    text-align: left;
+}
+
+.button_start {
+    /* сброс стандартных стилей кнопки */
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+    appearance: none;
+    border: 0;
+    border-radius: 6px;
+    background: black;
+    color: white;
+    padding: 2% 20%;
+    min-width: 10%;
+}
+
+.button_start:hover {
+    background: rgb(44, 44, 44);
+}
+
+.button_start:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px grey;
+}
+
+/* container_3 - about_us */
+.container_3 {
+    background-color: black;
+    position: relative;
+    padding-top: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
+    text-align: center;
+    height: auto;
+}
+
+.container_3_text {
+    font-family: "Montserrat-SemiBold.ttf";
+    color: white;
+    margin-bottom: 0;
+}
+
+.container_3_header {
+    font-family: "Montserrat-Bold.ttf";
+    color: white;
+    margin-top: 0;
+}
+
+
+/* container 4-5-6 about_us */
+.container_4, .container_5, .container_6 {
+    background: black;
+    padding: 10% 10% 10% 10%;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(1); */
+    position: relative;
+    margin: auto;
+    gap: 5%;
+}
+
+.img {
+    width: 100%;
+}
+
+.img_1_text {
+    font-family: "Montserrat-SemiBold.ttf";
+    color: white;
+    margin: 0;
+}
+
+.img_1_subtext {
+    font-family: "Montserrat-Bold.ttf";
+    color: white;
+    margin-top: 0;
+}
+
+
+/* container_7 - about_teachers */
+/* container_11 - drom */
+.container_7, .container_11 {
+    background-color: white;
+    position: relative;
+    padding-top: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
+    text-align: center;
+    height: auto;
+}
+
+.container_7_text, .container_11_text {
+    font-family: "Montserrat-SemiBold.ttf";
+    color: black;
+    margin-bottom: 0;
+}
+
+.container_7_header, .container_11_header {
+    font-family: "Montserrat-Bold.ttf";
+    color: black;
+    margin-top: 0;
+}
+
+
+/* container 8-9-10 teachers */
+.container_8, .container_9, .container_10 {
+    background: white;
+    padding: 10% 10% 10% 10%;
+    height: auto;
+}
+
+.img_teachers_text {
+    font-family: "Montserrat-SemiBold.ttf";
+    color: black;
+    margin: 0;
+}
+
+.img_teachers_subtext {
+    font-family: "Montserrat-Bold.ttf";
+    color: black;
+    margin-top: 0;
+}
+
+.img_teachers_subtext_right {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-family: "Montserrat-Bold.ttf";
+    color: black;
+    margin-top: 0;
+}
+
+
+/* container_12 about_drom */
+.container_12 {
+    background: white;
+    padding: 10% 10% 10% 10%;
+    height: auto;
+}
+
+.grid_about_drom{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* grid-template-rows: repeat(1); */
+    position: relative;
+    margin: auto;
+    gap: 1%;
+}
+
+
+
+
 /* less */
 @media (max-width: 320px) {
     .bridge_text{
@@ -122,16 +301,20 @@ body {
         font-size: 0.7em;
     }
 
-    .slider {
+    .slider, .container_2_block, .grid {
         width: 192px;
     }
 
-    .news_head{
+    .news_head, .img_1_subtext, .img_teachers_subtext, .img_teachers_subtext_right{
         font-size: 0.4em;
     }
 
-    .news_text, .news_more, .news_all {
+    .news_text, .news_more, .news_all, .container_2_text, .button_start, .container_3_text, .img_1_text, .container_7_text, .container_11_text, .img_teachers_text {
         font-size: 0.3em;
+    }
+
+    .container_2_header, .container_3_header, .container_7_header, .container_11_header {
+        font-size: 1em;
     }
 }
 
@@ -146,16 +329,20 @@ body {
         font-size: 0.9em;
     }
 
-    .slider {
+    .slider, .container_2_block, .grid {
         width: 192px;
     }
 
-    .news_head{
+    .news_head, .img_1_subtext, .img_teachers_subtext, .img_teachers_subtext_right {
         font-size: 0.4em;
     }
 
-    .news_text, .news_more, .news_all {
+    .news_text, .news_more, .news_all, .container_2_text, .button_start, .container_3_text, .img_1_text, .container_7_text, .container_11_text, .img_teachers_text {
         font-size: 0.3em;
+    }
+
+    .container_2_header, .container_3_header, .container_7_header, .container_11_header {
+        font-size: 1em;
     }
 
 }
@@ -171,16 +358,20 @@ body {
         font-size: 1.1em;
     }
 
-    .slider {
+    .slider, .container_2_block, .grid {
         width: 288px;
     }
 
-    .news_head{
+    .news_head, .img_1_subtext, .img_teachers_subtext, .img_teachers_subtext_right {
         font-size: 0.6em;
     }
 
-    .news_text, .news_more, .news_all {
+    .news_text, .news_more, .news_all, .container_2_text, .button_start, .container_3_text, .img_1_text, .container_7_text, .container_11_text, .img_teachers_text {
         font-size: 0.5em;
+    }
+
+    .container_2_header, .container_3_header, .container_7_header, .container_11_header {
+        font-size: 1.5em;
     }
 }
 
@@ -195,16 +386,20 @@ body {
         font-size: 1.2em;
     }
 
-    .slider {
+    .slider, .container_2_block, .grid {
         width: 460px;
     }
 
-    .news_head{
+    .news_head, .img_1_subtext, .img_teachers_subtext, .img_teachers_subtext_right {
         font-size: 0.95em;
     }
 
-    .news_text, .news_more, .news_all {
+    .news_text, .news_more, .news_all, .container_2_text, .button_start, .container_3_text, .img_1_text, .container_7_text, .container_11_text, .img_teachers_text {
         font-size: 0.8em;
+    }
+
+    .container_2_header, .container_3_header, .container_7_header, .container_11_header {
+        font-size: 2em;
     }
 }
 
@@ -221,16 +416,20 @@ body {
         font-size: 0.95em;
     }
 
-    .slider {
+    .slider, .container_2_block, .grid {
         width: 614px;
     }
 
-    .news_head{
+    .news_head, .img_1_subtext, .img_teachers_subtext, .img_teachers_subtext_right {
         font-size: 1.3em;
     }
 
-    .news_text, .news_more, .news_all {
+    .news_text, .news_more, .news_all, .container_2_text, .button_start, .container_3_text, .img_1_text, .container_7_text, .container_11_text, .img_teachers_text {
         font-size: 1.2em;
+    }
+
+    .container_2_header, .container_3_header, .container_7_header, .container_11_header {
+        font-size: 3em;
     }
 }
 
@@ -245,16 +444,20 @@ body {
         font-size: 1.1em;
     }
 
-    .slider {
+    .slider, .container_2_block, .grid {
         width: 768px;
     }
 
-    .news_head{
+    .news_head, .img_1_subtext, .img_teachers_subtext, .img_teachers_subtext_right {
         font-size: 1.6em;
     }
 
-    .news_text, .news_more, .news_all {
+    .news_text, .news_more, .news_all, .container_2_text, .button_start, .container_3_text, .img_1_text, .container_7_text, .container_11_text, .img_teachers_text {
         font-size: 1.4em;
+    }
+
+    .container_2_header, .container_3_header, .container_7_header, .container_11_header {
+        font-size: 4em;
     }
 }
 
@@ -268,16 +471,20 @@ body {
         font-size: 1.4em;
     }
 
-    .slider {
+    .slider, .container_2_block, .grid {
         width: 960px;
     }
 
-    .news_head {
+    .news_head, .img_1_subtext, .img_teachers_subtext, .img_teachers_subtext_right {
         font-size: 2.1em;
     }
 
-    .news_text, .news_more, .news_all {
+    .news_text, .news_more, .news_all, .container_2_text, .button_start, .container_3_text, .img_1_text, .container_7_text, .container_11_text, .img_teachers_text {
         font-size: 1.7em;
+    }
+
+    .container_2_header, .container_3_header, .container_7_header, .container_11_header {
+        font-size: 5em;
     }
 }
 
@@ -296,16 +503,20 @@ body {
         font-size: 1.7em;
     }
 
-    .slider {
+    .slider, .container_2_block, .grid {
         width: 1162px;
     }
 
-    .news_head {
+    .news_head, .img_1_subtext, .img_teachers_subtext, .img_teachers_subtext_right {
         font-size: 2.5em;
     }
 
-    .news_text, .news_more, .news_all  {
+    .news_text, .news_more, .news_all, .container_2_text, .button_start, .container_3_text, .img_1_text, .container_7_text, .container_11_text, .img_teachers_text {
         font-size: 2em;
+    }
+
+    .container_2_header, .container_3_header, .container_7_header, .container_11_header {
+        font-size: 6em;
     }
 }
 
