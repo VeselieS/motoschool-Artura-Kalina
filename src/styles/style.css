@@ -288,7 +288,77 @@ body {
     gap: 1%;
 }
 
+.drom_img {
+    width: 100%;
+}
 
+/*container_13*/
+.container_13{
+    background: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container_13_text {
+    font-family: "Montserrat-SemiBold.ttf";
+    color: white;
+    margin-bottom: 0;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container_13_header {
+    font-family: "Montserrat-Bold.ttf";
+    color: white;
+    margin-top: 0;
+}
+
+.motorcycle_park_moto_1{
+    height: ;
+}
+
+/*container_14*/
+
+.container_14{
+    background: black;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.otziv_1{
+    color: white;
+}
+
+.otziv_1_1{
+    color: white;
+}
+
+.button_back{
+
+}
+
+.button_next{
+
+}
+
+.horizontal-line {
+  height: 1px; /* Высота полоски */
+  background-color: white; /* Цвет полоски */
+}
+
+.horizontal-line_1 {
+  height: 1px; /* Высота полоски */
+  background-color: white; /* Цвет полоски */
+}
 
 
 /* less */
@@ -523,12 +593,12 @@ body {
 
 @font-face {
     font-family: "Montserrat-SemiBold.ttf";
-    src: url(/src/fonts/Montserrat-SemiBold.ttf) format("truetype");
+    src: url(C:/Users/rusya/Documents/GitHub/motoschool-Artura-Kalina/src/fonts/Montserrat-SemiBold.ttf) format("truetype");
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat-Bold.ttf";
-    src: url(/src/fonts/Montserrat-Bold.ttf) format("truetype");
+    src: url(C:/Users/rusya/Documents/GitHub/motoschool-Artura-Kalina/src/fonts/Montserrat-Bold.ttf) format("truetype");
     font-style: normal;
 }
