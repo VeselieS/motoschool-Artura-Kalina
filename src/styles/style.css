@@ -205,6 +205,11 @@ body {
     width: 100%;
 }
 
+.img img_2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
 .img_1_text {
     font-family: "Montserrat-SemiBold.ttf";
     color: white;
@@ -247,7 +252,7 @@ body {
 /* container 8-9-10 teachers */
 .container_8, .container_9, .container_10 {
     background: white;
-    padding: 10% 10% 10% 10%;
+    padding: 7%;
     height: auto;
 }
 
@@ -275,21 +280,43 @@ body {
 /* container_12 about_drom */
 .container_12 {
     background: white;
-    padding: 10% 10% 10% 10%;
+    padding: 10% 5%;
     height: auto;
 }
 
 .grid_about_drom{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     /* grid-template-rows: repeat(1); */
     position: relative;
     margin: auto;
     gap: 1%;
 }
 
+.grid_about_drom_text{
+    padding: 0;
+}
+
+.grid_about_drom h3{
+    font-family: "Montserrat-Bold.ttf";
+    line-height: 1,5;
+    margin-bottom: 15px;
+}
+
+.grid_about_drom p{
+    font-family: "Montserrat-SemiBold.ttf";
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.grid_about_drom_img{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .drom_img {
-    width: 100%;
+    width: 70%;
 }
 
 /*container_13*/
@@ -299,7 +326,7 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     margin: 0;
 }
 
@@ -319,7 +346,8 @@ body {
 }
 
 .motorcycle_park_moto_1{
-    height: ;
+    margin-top: 5%;
+    width: 45% ;
 }
 
 /*container_14*/
@@ -327,37 +355,237 @@ body {
 .container_14{
     background: black;
     display: flex;
-    height: 100vh;
+    height: auto;
     margin: 0;
+    padding: 10%;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.otziv_1{
-    color: white;
-}
-
-.otziv_1_1{
-    color: white;
-}
-
-.button_back{
-
-}
-
-.button_next{
-
-}
-
-.horizontal-line {
-  height: 1px; /* Высота полоски */
-  background-color: white; /* Цвет полоски */
+.review{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;
+    height: 70vh;
+    margin: 10%;
+    gap: 0%;
 }
 
 .horizontal-line_1 {
-  height: 1px; /* Высота полоски */
-  background-color: white; /* Цвет полоски */
+    height: 1px; /* Высота полоски */
+    background-color: white; /* Цвет полоски */
+    grid-column: 2/5;
+    grid-row: 1;
+    margin-top: 10%;
+}
+
+.otziv_coment{
+    font-family: "Montserrat-SemiBold.ttf";
+    color: white;
+    margin: 0;
+    padding-top: 30%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.otziv_name{
+    font-family: "Montserrat-Bold.ttf";
+    color: white;
+    padding-top: 45%;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/*.rerere{
+    text-align: center;*/
+    .button_back{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: left;
+        width: 35%;
+    }
+    .button_next{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: end;
+        width: 35%;
+
+    }
+    .horizontal-line_2 {
+        height: 1px; /* Высота полоски */
+        background-color: white; /* Цвет полоски */
+        margin: 0;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+
+.container_15 {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы один за другим по вертикали */
+    text-align: center; /* Центрируем текст внутри блоков */
+    background: white;
+    align-items: center;
+}
+
+.container_15 > div {
+    margin: 10px; /* Добавляем отступы между блоками (по желанию) */
+}
+
+.basic_course, .rider_course, .trial_lesson {
+    display: flex;
+    height: auto;
+    padding: 5% 5% 5% 5%;
+    flex-direction: column; /* Организуем элементы в столбик */
+    align-items: center; /* Центрируем элементы внутри блока */
+}
+
+.time_container, .book_container, .cone_container {
+    display: flex; /* Размещаем время и текст по горизонтали */
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.time_container img, .time_container h3,
+.book_container img, .book_container h3,
+.cone_container img, .cone_container h3 {
+    margin: 0 10px; /* Добавляем отступы между изображением и текстом в контейнере (по желанию) */
+    font-family: "Montserrat-SemiBold.ttf";
+}
+
+.time_container img, .book_container img, .cone_container img{
+    width: 8%;
+    height: auto;
+}
+
+.course, .course_price{
+    font-family: "Montserrat-Bold.ttf";
+    text-transform: uppercase;
+    font-size: 225%;
+    line-height: 0;
+}
+
+.img_moto{
+    margin-right: 20px;
+    width: 25%;
+}
+
+.course_text {
+    opacity: 0; /* Начинаем с нулевой прозрачности */
+    visibility: hidden; /* И скрытым текстом */
+    transition: opacity 1s ease; /* Плавное появление в течение 1 секунды */
+    font-family: "Montserrat-SemiBold.ttf";
+}
+
+.course_text.show {
+    opacity: 1; /* При добавлении класса show текст становится видимым */
+    visibility: visible; /* И показывается на экране */
+}
+
+.course_text_1 {
+    font-family: "Montserrat-SemiBold.ttf";
+    margin-bottom: 0;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.container_16{
+    background: black;
+    display: flex;
+    height: 110vh;
+}
+
+.application{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    margin: auto;
+    gap: 5%;
+}
+
+.img_qr{
+    justify-self: center;
+    width: 70%;
+    padding: 5%;
+}
+
+.text_phone{
+    display: flex;
+    flex-direction: column; /* Организуем элементы в столбик */
+    align-items: center;
+    gap: 30px;
+}
+
+.phone{
+    color: white;
+    font-size: 30px;
+    font-family: "Montserrat-SemiBold.ttf";
+}
+
+input[type="text"],
+input[type="tel"] {
+  background: transparent; /* Делаем фон прозрачным */
+  border: none; /* Убираем границы вокруг элементов */
+  border-bottom: 1px solid white; /* Добавляем подчеркивание */
+  color: white; /* Устанавливаем цвет текста */
+  font-size: 20px;
+  font-family: "Montserrat-SemiBold.ttf";
+}
+
+input[type="datetime-local"]{
+  background: transparent; /* Делаем фон прозрачным */
+  border: none; /* Убираем границы вокруг элементов */
+  border-bottom: 1px solid white; /* Добавляем подчеркивание */
+  color: white; /* Устанавливаем цвет текста */
+  font-size: 23.5px;
+  font-family: "Montserrat-SemiBold.ttf";
+}
+
+.button_phone{
+    font-size: 22px;
+    font-family: "Montserrat-SemiBold.ttf";
+}
+
+.container_17{
+    display: flex;
+    background: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0;
+}
+
+.map{
+    width: 100%;
+    height: 400px;
+}
+
+.container_18{
+    display: grid;
+    flex-direction: column; /* Располагаем элементы один за другим по вертикали */
+    text-align: center; /* Центрируем текст внутри блоков */
+    background: black;
+    align-items: center;
+}
+
+.text_under_map{
+    color: white;
+    text-align: center;
+    font-family: "Montserrat-SemiBold.ttf";
 }
 
 
@@ -385,6 +613,67 @@ body {
 
     .container_2_header, .container_3_header, .container_7_header, .container_11_header {
         font-size: 1em;
+    }
+
+    .grid_about_drom, .application {
+        grid-template-columns: 1fr;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img_teachers_subtext_right {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .img img_2{
+        grid-row-start: 1;
+    }
+
+
+    .grid_about_drom_text {
+        padding-left: 20%; /* Возвращаем левый отступ для более широких экранов */
+        font-size: 50%; /* Восстанавливаем исходный размер шрифта */
+    }
+
+    .container_13_text, .container_13_header, .otziv_name, .otziv_coment, .time_container, .book_container, .cone_container, .course_text, .course_text_1, .text_under_map{
+        font-size: 50%;
+    }
+
+    .horizontal-line_2{
+        margin-top: 10%;
+    }
+
+    .review{
+        height: 35vh;
+    }
+
+    .course, .course_price{
+        font-size: 60%;
+    }
+
+    input[type="text"], input[type="tel"], input[type="datetime-local"]{
+        width: 30%;
+        font-size: 30%;
+    }
+
+    .button_phone{
+        width: 30%;
+        font-size: 30%;
+    }
+
+    .map{
+        height: 320px;
+    }
+
+    .text_under_map{
+        font-size: 8px;
+    }
+
+    .phone{
+        font-size: 8px;
     }
 }
 
@@ -415,6 +704,66 @@ body {
         font-size: 1em;
     }
 
+    .grid_about_drom, .application{
+        grid-template-columns: 1fr;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img_teachers_subtext_right {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .img img_2{
+        grid-row-start: 1;
+    }
+
+    .grid_about_drom_text {
+        padding-left: 20%;
+        font-size: 60%;
+    }
+
+    .container_13_text, .container_13_header, .otziv_name, .otziv_coment, .time_container, .book_container, .cone_container, .course_text, .course_text_1, .text_under_map {
+        font-size: 60%;
+    }
+
+    .horizontal-line_2{
+        margin-top: 10%;
+    }
+
+    .review{
+        height: 40vh;
+    }
+
+    .course, .course_price{
+        font-size: 90%;
+    }
+
+    input[type="text"], input[type="tel"], input[type="datetime-local"]{
+        width: 40%;
+        font-size: 40%;
+    }
+
+    .button_phone{
+        width: 40%;
+        font-size: 40%;
+    }
+
+    .map{
+        height: 320px;
+    }
+
+    .text_under_map{
+        font-size: 10px;
+    }
+
+    .phone{
+        font-size: 10px;
+    }
+
 }
 
 /* phones */
@@ -443,6 +792,66 @@ body {
     .container_2_header, .container_3_header, .container_7_header, .container_11_header {
         font-size: 1.5em;
     }
+
+    .grid_about_drom, .application{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_teachers_subtext_right {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .img img_2{
+        grid-row-start: 1;
+    }
+
+    .grid_about_drom_text {
+        padding-left: 20%; /* Возвращаем левый отступ для более широких экранов */
+        font-size: 70%; /* Восстанавливаем исходный размер шрифта */
+    }
+
+    .container_13_text, .container_13_header, .otziv_name, .otziv_coment, .time_container, .book_container, .cone_container, .course_text, .course_text_1, .text_under_map {
+        font-size: 70%;
+    }
+
+    .horizontal-line_2{
+        margin-top: 20%;
+    }
+
+    .review{
+        height: 45vh;
+    }
+
+    .course, .course_price{
+        font-size: 130%;
+    }
+
+    input[type="text"], input[type="tel"], input[type="datetime-local"]{
+        width: 50%;
+        font-size: 50%;
+    }
+
+    .button_phone{
+        width: 50%;
+        font-size: 50%;
+    }
+
+    .map{
+        height: 480px;
+    }
+
+    .text_under_map{
+        font-size: 12px;
+    }
+
+    .phone{
+        font-size: 14px;
+    }
 }
 
 /* tablet */
@@ -470,6 +879,66 @@ body {
 
     .container_2_header, .container_3_header, .container_7_header, .container_11_header {
         font-size: 2em;
+    }
+
+    .grid_about_drom, .application{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_teachers_subtext_right {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .img img_2{
+        grid-row-start: 1;
+    }
+
+    .grid_about_drom_text {
+        padding-left: 20%;
+        font-size: 80%;
+    }
+
+    .container_13_text, .container_13_header, .otziv_name, .otziv_coment, .time_container, .book_container, .cone_container, .course_text, .course_text_1{
+        font-size: 80%;
+    }
+
+    .horizontal-line_2{
+        margin-top: 20%;
+    }
+
+    .review{
+        height: 50vh;
+    }
+
+    .course, .course_price, .phone{
+        font-size: 170%;
+    }
+
+    input[type="text"], input[type="tel"], input[type="datetime-local"]{
+        width: 60%;
+        font-size: 60%;
+    }
+
+    .button_phone{
+        width: 60%;
+        font-size: 60%;
+    }
+
+    .map{
+        height: 576px;
+    }
+
+    .text_under_map{
+        font-size: 14px;
+    }
+
+    .phone{
+        font-size: 17px;
     }
 }
 
@@ -501,6 +970,66 @@ body {
     .container_2_header, .container_3_header, .container_7_header, .container_11_header {
         font-size: 3em;
     }
+
+    .grid_about_drom, .application{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_teachers_subtext_right {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .img img_2{
+        grid-row-start: 1;
+    }
+
+    .grid_about_drom_text {
+        padding-left: 20%; /* Возвращаем левый отступ для более широких экранов */
+        font-size: 90%; /* Восстанавливаем исходный размер шрифта */
+    }
+
+    .container_13_text, .container_13_header, .otziv_name, .otziv_coment, .time_container, .book_container, .cone_container, .course_text, .course_text_1{
+        font-size: 90%;
+    }
+
+    .horizontal-line_2{
+        margin-top: 20%;
+    }
+
+    .review{
+        height: 55vh;
+    }
+
+    .course, .course_price{
+        font-size: 190%;
+    }
+
+    input[type="text"], input[type="tel"], input[type="datetime-local"]{
+        width: 70%;
+        font-size: 70%;
+    }
+
+    .button_phone{
+        width: 70%;
+        font-size: 70%;
+    }
+
+    .map{
+        height: 768px;
+    }
+
+    .text_under_map{
+        font-size: 16px;
+    }
+
+    .phone{
+        font-size: 20px;
+    }
 }
 
 /* not full-hd */
@@ -529,6 +1058,66 @@ body {
     .container_2_header, .container_3_header, .container_7_header, .container_11_header {
         font-size: 4em;
     }
+
+    .grid_about_drom, .application {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_teachers_subtext_right {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .img img_2{
+        grid-row-start: 1;
+    }
+
+    .grid_about_drom_text {
+        padding-left: 20%; /* Возвращаем левый отступ для более широких экранов */
+        font-size: 100%; /* Восстанавливаем исходный размер шрифта */
+    }
+
+    .container_13_text, .container_13_header, .otziv_name, .otziv_coment, .time_container, .book_container, .cone_container, .course_text, .course_text_1{
+        font-size: 100%;
+    }
+
+    .horizontal-line_2{
+        margin-top: 20%;
+    }
+
+    .review{
+        height: 60vh;
+    }
+
+    .course, .course_price{
+        font-size: 200%;
+    }
+
+    input[type="text"], input[type="tel"], input[type="datetime-local"]{
+        width: 80%;
+        font-size: 80%;
+    }
+
+    .button_phone{
+        width: 80%;
+        font-size: 80%;
+    }
+
+    .map{
+        height: 720px;
+    }
+
+    .text_under_map{
+        font-size: 18px;
+    }
+
+    .phone{
+        font-size: 24px;
+    }
 }
 
 /* height 900px */
@@ -555,6 +1144,66 @@ body {
 
     .container_2_header, .container_3_header, .container_7_header, .container_11_header {
         font-size: 5em;
+    }
+
+    .grid_about_drom, .application{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_teachers_subtext_right {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .img img_2{
+        grid-row-start: 1;
+    }
+
+    .grid_about_drom_text {
+        padding-left: 20%; /* Возвращаем левый отступ для более широких экранов */
+        font-size: 110%; /* Восстанавливаем исходный размер шрифта */
+    }
+
+    .container_13_text, .container_13_header, .otziv_name, .otziv_coment, .time_container, .book_container, .cone_container, .course_text, .course_text_1 {
+        font-size: 110%;
+    }
+
+    .horizontal-line_2{
+        margin-top: 20%;
+    }
+
+    .review{
+        height: 65vh;
+    }
+
+    .course, .course_price{
+        font-size: 210%;
+    }
+
+    input[type="text"], input[type="tel"], input[type="datetime-local"]{
+        width: 120%;
+        font-size: 120%;
+    }
+
+    .button_phone{
+        width: 90%;
+        font-size: 90%;
+    }
+
+    .map{
+        height: 900px;
+    }
+
+    .text_under_map{
+        font-size: 20px;
+    }
+
+    .phone{
+        font-size: 27px;
     }
 }
 
@@ -588,17 +1237,72 @@ body {
     .container_2_header, .container_3_header, .container_7_header, .container_11_header {
         font-size: 6em;
     }
+
+    .grid_about_drom, .application{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_teachers_subtext_right {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .img img_2{
+        grid-row-start: 1;
+    }
+
+    .grid_about_drom_text {
+        padding-left: 20%; /* Возвращаем левый отступ для более широких экранов */
+        font-size: 120%; /* Восстанавливаем исходный размер шрифта */
+    }
+
+    .container_13_text, .container_13_header, .otziv_name, .otziv_coment, .time_container, .book_container, .cone_container, .course_text, .course_text_1 {
+        font-size: 120%;
+    }
+
+    .horizontal-line_2{
+        margin-top: 20%;
+    }
+
+    .review{
+        height: 70vh;
+    }
+
+    .course, .course_price{
+        font-size: 225%;
+    }
+
+    input[type="text"], input[type="tel"], input[type="datetime-local"] {
+        width: 150%;
+        font-size: 150%;
+    }
+
+    .map{
+        height: 1080px;
+    }
+
+    .text_under_map{
+        font-size: 22px;
+    }
+
+    .phone{
+        font-size: 30px;
+    }
 }
 
 
 @font-face {
     font-family: "Montserrat-SemiBold.ttf";
-    src: url(C:/Users/rusya/Documents/GitHub/motoschool-Artura-Kalina/src/fonts/Montserrat-SemiBold.ttf) format("truetype");
+    src: url(C:/Users/Ruslan/Documents/motoschool-Artura-Kalina/src/fonts/Montserrat-SemiBold.ttf) format("truetype");
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat-Bold.ttf";
-    src: url(C:/Users/rusya/Documents/GitHub/motoschool-Artura-Kalina/src/fonts/Montserrat-Bold.ttf) format("truetype");
+    src: url(C:/Users/Ruslan/Documents/motoschool-Artura-Kalina/src/fonts/Montserrat-Bold.ttf) format("truetype");
     font-style: normal;
 }
