@@ -64,8 +64,10 @@ body {
 /* container_1 - news */
 .container_1 {
     background-color: white;
-    padding: 10% 10% 10% 10%;
+    padding: 10% 10% 10% 20%;
     height: 45vw;
+    display: inline-block;
+    position: relative;
 }
 
 .slider {
@@ -110,6 +112,19 @@ body {
     font-family: "Montserrat-SemiBolt.ttf";
     color: black;
     float: right;
+}
+
+.auto_text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    writing-mode: vertical-rl;
+    height: 100%;
+    margin: 0% -15% 0% 0%;
+    user-select: none;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 1;
 }
 
 
@@ -675,6 +690,10 @@ input[type="datetime-local"]{
     .phone{
         font-size: 8px;
     }
+
+    .auto_text {
+        font-size: 1.5em;
+    }
 }
 
 /* phones */
@@ -764,6 +783,9 @@ input[type="datetime-local"]{
         font-size: 10px;
     }
 
+    .auto_text {
+        font-size: 1.6em;
+    }
 }
 
 /* phones */
@@ -852,6 +874,10 @@ input[type="datetime-local"]{
     .phone{
         font-size: 14px;
     }
+
+    .auto_text {
+        font-size: 2.5em;
+    }
 }
 
 /* tablet */
@@ -939,6 +965,10 @@ input[type="datetime-local"]{
 
     .phone{
         font-size: 17px;
+    }
+
+    .auto_text {
+        font-size: 4em;
     }
 }
 
@@ -1030,6 +1060,10 @@ input[type="datetime-local"]{
     .phone{
         font-size: 20px;
     }
+
+    .auto_text {
+        font-size: 5.5em;
+    }
 }
 
 /* not full-hd */
@@ -1118,6 +1152,10 @@ input[type="datetime-local"]{
     .phone{
         font-size: 24px;
     }
+
+    .auto_text {
+        font-size: 7em;
+    }
 }
 
 /* height 900px */
@@ -1205,6 +1243,10 @@ input[type="datetime-local"]{
     .phone{
         font-size: 27px;
     }
+
+    .auto_text {
+        font-size: 8em;
+    }
 }
 
 /* full-hd */
@@ -1291,6 +1333,10 @@ input[type="datetime-local"]{
 
     .phone{
         font-size: 30px;
+    }
+
+    .auto_text {
+        font-size: 10em;
     }
 }
 
