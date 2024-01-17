@@ -34,11 +34,31 @@
     font-family: "Montserrat-SemiBold.ttf";
 }
 
+.auto_text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    writing-mode: vertical-rl;
+    height: 100%;
+    margin: 0% 5% 0% 0%;
+    user-select: none;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.auto_textt {
+    height: 100%;
+}
 
 /* less */
 @media (max-width: 320px) {
     .container {
         width: 192px;
+    }
+
+    .auto_text {
+        font-size: 1.5em;
     }
 }
 
@@ -52,6 +72,10 @@
     .news {
         gap: 2%;
     }
+
+    .auto_text {
+        font-size: 1.6em;
+    }
 }
 
 /* phones */
@@ -63,6 +87,10 @@
 
     .news {
         gap: 1%;
+    }
+
+    .auto_text {
+        font-size: 2.5em;
     }
 }
 
@@ -79,6 +107,10 @@
 
         gap: 3%;
     }
+
+    .auto_text {
+        font-size: 4em;
+    }
 }
 
 /* netbooks */
@@ -92,6 +124,10 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+
+    .auto_text {
+        font-size: 5.5em;
+    }
 }
 
 /* not full-hd */
@@ -100,12 +136,20 @@
     .container {
         width: 768px;
     }
+
+    .auto_text {
+        font-size: 7em;
+    }
 }
 
 /* height 900px */
 @media (min-width: 1600px) {
     .container {
         width: 960px;
+    }
+
+    .auto_text {
+        font-size: 8em;
     }
 }
 
@@ -114,6 +158,10 @@
 @media (min-width: 1920px) {
     .container {
         width: 1162px;
+    }
+
+    .auto_text {
+        font-size: 10em;
     }
 }
 

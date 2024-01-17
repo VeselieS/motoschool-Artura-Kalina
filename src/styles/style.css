@@ -64,7 +64,7 @@ body {
 /* container_1 - news */
 .container_1 {
     background-color: white;
-    padding: 10% 10% 10% 20%;
+    padding: 10% 5% 10% 20%;
     height: 45vw;
     display: inline-block;
     position: relative;
@@ -120,7 +120,7 @@ body {
     right: 0;
     writing-mode: vertical-rl;
     height: 100%;
-    margin: 0% -15% 0% 0%;
+    margin: 0% -10% 0% 0%;
     user-select: none;
     overflow: hidden;
     white-space: nowrap;
@@ -237,6 +237,11 @@ body {
     margin-top: 0;
 }
 
+.auto_text_cont_456 {
+    color: white;
+    padding: 5% 0% 0% 0%;
+}
+
 
 /* container_7 - about_teachers */
 /* container_11 - drom */
@@ -269,6 +274,7 @@ body {
     background: white;
     padding: 7%;
     height: auto;
+    position: relative;
 }
 
 .img_teachers_text {
@@ -289,6 +295,22 @@ body {
     font-family: "Montserrat-Bold.ttf";
     color: black;
     margin-top: 0;
+}
+
+.teachers_auto_text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    writing-mode: vertical-rl;
+    height: 100%;
+    margin: 0% 5% 0% 0%;
+    user-select: none;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.auto_text_into {
+    height: 100%;
 }
 
 
@@ -343,6 +365,7 @@ body {
     justify-content: center;
     height: auto;
     margin: 0;
+    position: relative;
 }
 
 .container_13_text {
@@ -365,6 +388,19 @@ body {
     width: 45% ;
 }
 
+.motopark_auto_text {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    writing-mode: vertical-rl;
+    height: 100%;
+    margin: 0% 5% 0% 0%;
+    user-select: none;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 /*container_14*/
 
 .container_14{
@@ -376,6 +412,7 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .review{
@@ -520,7 +557,8 @@ body {
 .container_16{
     background: black;
     display: flex;
-    height: 110vh;
+    height: 130vh;
+    position: relative;
 }
 
 .application{
@@ -572,6 +610,12 @@ input[type="datetime-local"]{
 .button_phone{
     font-size: 22px;
     font-family: "Montserrat-SemiBold.ttf";
+}
+
+.request_auto_text {
+    color: white;
+    grid-column: span 2;
+    padding: 0% 0% 10% 0%;
 }
 
 .container_17{
@@ -691,7 +735,7 @@ input[type="datetime-local"]{
         font-size: 8px;
     }
 
-    .auto_text {
+    .auto_text, .auto_text_cont_456, .teachers_auto_text, .motopark_auto_text, .request_auto_text {
         font-size: 1.5em;
     }
 }
@@ -783,7 +827,7 @@ input[type="datetime-local"]{
         font-size: 10px;
     }
 
-    .auto_text {
+    .auto_text, .auto_text_cont_456, .teachers_auto_text, .motopark_auto_text, .request_auto_text {
         font-size: 1.6em;
     }
 }
@@ -875,7 +919,7 @@ input[type="datetime-local"]{
         font-size: 14px;
     }
 
-    .auto_text {
+    .auto_text, .auto_text_cont_456, .teachers_auto_text, .motopark_auto_text, .request_auto_text {
         font-size: 2.5em;
     }
 }
@@ -967,7 +1011,7 @@ input[type="datetime-local"]{
         font-size: 17px;
     }
 
-    .auto_text {
+    .auto_text, .auto_text_cont_456, .teachers_auto_text, .motopark_auto_text, .request_auto_text {
         font-size: 4em;
     }
 }
@@ -1061,7 +1105,7 @@ input[type="datetime-local"]{
         font-size: 20px;
     }
 
-    .auto_text {
+    .auto_text, .auto_text_cont_456, .teachers_auto_text, .motopark_auto_text, .request_auto_text {
         font-size: 5.5em;
     }
 }
@@ -1153,7 +1197,7 @@ input[type="datetime-local"]{
         font-size: 24px;
     }
 
-    .auto_text {
+    .auto_text, .auto_text_cont_456, .teachers_auto_text, .motopark_auto_text, .request_auto_text {
         font-size: 7em;
     }
 }
@@ -1244,7 +1288,7 @@ input[type="datetime-local"]{
         font-size: 27px;
     }
 
-    .auto_text {
+    .auto_text, .auto_text_cont_456, .teachers_auto_text, .motopark_auto_text, .request_auto_text {
         font-size: 8em;
     }
 }
@@ -1335,7 +1379,7 @@ input[type="datetime-local"]{
         font-size: 30px;
     }
 
-    .auto_text {
+    .auto_text, .auto_text_cont_456, .teachers_auto_text, .motopark_auto_text, .request_auto_text {
         font-size: 10em;
     }
 }
