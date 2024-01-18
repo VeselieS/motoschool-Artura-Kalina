@@ -255,12 +255,15 @@
         <div class="container_16">
             <div class="application" id="contactForm">
                 <img class="img_qr" src="./src/images/QR.png">
-                <form class="text_phone">
+                <form class="text_phone" id="text_phone">
                     <h3 class="phone">Заказать звонок</h3>
                     <input type="text" id="full_name" name="full_name" placeholder="Ф.И.О">
                     <input type="tel" id="phone" name="phone" placeholder="Номер телефона">
                     <input type="datetime-local" id="datetime-local" name="datetime-local" placeholder="Удобное время">
-                    <button type="submit" class="button_phone" onclick="return saveToFirebase(event)">Отправить</button>
+                    <button type="submit" class="button_phone">Отправить</button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
                     <script src="./src/scripts/firebase.js"></script>
                 </form>
                 <div class="request_auto_text">
