@@ -563,6 +563,7 @@ body {
 
 .application{
     display: grid;
+    width: 80%;
     grid-template-columns: 1fr;
     position: relative;
     margin: auto;
